@@ -1,15 +1,9 @@
 {
 	"name": "ilovepdf_bot",
-	"description": "A Telegram Bot that helps you to domany this with pdf.",
-	"keywords": [
-		"Telegram", "Telegram Bot", "pdf bot",
-		"ilovepdf", "nabilabavab", "python",
-		"ilovepdf_bot", "complete pdf bot"
-	],
+	"description": "A Telegram Bot that helps you to do many things with PDFs, including merging, splitting, and converting.",
 	"website": "https://github.com/nabilanavab/ilovepdf",
 	"repository": "https://github.com/nabilanavab/ilovepdf",
 	"logo": "https://te.legra.ph/file/84c63dd1fabde3b33cf90.jpg",
-	"success_url": "https://github.com/nabilanavab/ilovepdf",
 	"stack": "container",
 	"env": {
 		"API_ID": {
@@ -17,7 +11,7 @@
 			"required": true
 		},
 		"API_HASH": {
-			"description": "API_ID from my.telegram.org",
+			"description": "API_HASH from my.telegram.org",
 			"required": true
 		},
 		"API_TOKEN": {
@@ -25,31 +19,83 @@
 			"required": true
 		},
 		"MONGODB_URI": {
-			"description": "MongoDB Url",
-			"required":true
-		},
-		"UPDATE_CHANNEL": {
-			"description": "ChannelId if you need force Subscription",
-			"required": false
+			"description": "MongoDB connection string",
+			"required": true
 		},
 		"ADMINS": {
-			"description": "Admins id seperated by free space",
+			"description": "Admins' Telegram user IDs (space-separated)",
 			"required": false
 		},
 		"ADMIN_ONLY": {
-			"description": "If True only admins can use it",
+			"description": "If True, only admins can use the bot",
 			"required": false
 		},
 		"MAX_FILE_SIZE": {
-			"description": "for preventing overload (in mb)",
+			"description": "Maximum file size allowed (in MB)",
 			"required": false
 		},
-		"BANNED_USER": {
-			"description": "Baned Users Id",
+		"BANNED_USERS": {
+			"description": "List of banned users' Telegram IDs",
+			"required": false
+		},
+		"ADMIN_GROUPS": {
+			"description": "Group IDs where admins have control",
+			"required": false
+		},
+		"ADMIN_GROUP_ONLY": {
+			"description": "If True, only admin groups can use the bot",
+			"required": false
+		},
+		"BANNED_GROUP": {
+			"description": "List of banned group IDs",
+			"required": false
+		},
+		"ONLY_GROUP_ADMIN": {
+			"description": "If True, only group admins can use bot features",
 			"required": false
 		},
 		"LOG_CHANNEL": {
-			"description": "Database Channel",
+			"description": "Channel ID for logging bot activities",
+			"required": false
+		},
+		"COFFEE": {
+			"description": "Enable coffee donation prompt",
+			"required": false
+		},
+		"SEND_RESTART": {
+			"description": "Notify on bot restart",
+			"required": false
+		},
+		"PROTECT_CONTENT": {
+			"description": "Prevent users from forwarding files",
+			"required": false
+		},
+		"CONVERT_API": {
+			"description": "ConvertAPI key for document processing",
+			"required": false
+		},
+		"DEFAULT_NAME": {
+			"description": "Default name for PDF outputs",
+			"required": false
+		},
+		"DEFAULT_CAPTION": {
+			"description": "Default caption for sent PDFs",
+			"required": false
+		},
+		"DEFAULT_LANG": {
+			"description": "Default language setting",
+			"required": false
+		},
+		"MULTI_LANG_SUP": {
+			"description": "Enable multi-language support",
+			"required": false
+		},
+		"REFER_BETA": {
+			"description": "If True, use beta features",
+			"required": false
+		},
+		"STOP_BOT": {
+			"description": "If True, the bot stops responding",
 			"required": false
 		}
 	},

@@ -1,9 +1,21 @@
 {
-  "name": "iLovePDF Bot",
-  "description": "A Telegram bot for managing and converting PDF files.",
-  "repository": "https://github.com/keyz400/ilovepdf",
-  "logo": "https://te.legra.ph/file/8dfa3760df91a218a629c.jpg",
-  "keywords": ["telegram", "bot", "pdf", "converter"],
+  "name": "ilovepdf_bot",
+  "description": "A Telegram Bot that helps you to do many things with PDFs.",
+  "keywords": [
+    "Telegram",
+    "Telegram Bot",
+    "PDF Bot",
+    "ilovepdf",
+    "nabilanavab",
+    "Python",
+    "ilovepdf_bot",
+    "Complete PDF Bot"
+  ],
+  "website": "https://github.com/nabilanavab/ilovepdf",
+  "repository": "https://github.com/nabilanavab/ilovepdf",
+  "logo": "https://te.legra.ph/file/84c63dd1fabde3b33cf90.jpg",
+  "success_url": "https://github.com/nabilanavab/ilovepdf",
+  "stack": "container",
   "env": {
     "API_ID": {
       "description": "Your Telegram API ID. Get it from my.telegram.org.",

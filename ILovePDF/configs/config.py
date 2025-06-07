@@ -78,14 +78,14 @@ class settings(object):
     DEFAULT_LANG = os.environ.get("DEFAULT_LANG", "eng")  # use small letters
 
     MULTI_LANG_SUP = (
-        True if os.environ.get("MULTI_LANG_SUP", "False") == "True" else False
+        True if os.environ.get("MULTI_LANG_SUP", "True") == "True" else False
     )
 
     REPORT = "https://t.me/thunder_discussion1"
 
     FEEDBACK = "https://t.me/thunder_discussion1"
 
-    SOURCE_CODE = "https://t.me/lox_bots"
+    SOURCE_CODE = "https://t.me/lox_botz"
 
     OWNER_ID, OWNER_USERNAME = 1318663278, "vinjak"
 

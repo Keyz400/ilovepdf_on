@@ -12,6 +12,7 @@ RUN pip install -r requirements.txt
 RUN apt update
 RUN apt install -y ocrmypdf
 RUN apt install -y wkhtmltopdf
+RUN apt install -y tesseract-ocr-eng
 
 COPY /ILovePDF .
 
